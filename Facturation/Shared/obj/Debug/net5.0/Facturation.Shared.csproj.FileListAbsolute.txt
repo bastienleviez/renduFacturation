@@ -1,0 +1,12 @@
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\bin\Debug\net5.0\Facturation.Shared.deps.json
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\bin\Debug\net5.0\Facturation.Shared.dll
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\bin\Debug\net5.0\ref\Facturation.Shared.dll
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\bin\Debug\net5.0\Facturation.Shared.pdb
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.csprojAssemblyReference.cache
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.AssemblyInfoInputs.cache
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.AssemblyInfo.cs
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.csproj.CoreCompileInputs.cache
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.dll
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\ref\Facturation.Shared.dll
+C:\Users\levie\Documents\EPSI\B3\C#\Facturation\Facturation\Shared\obj\Debug\net5.0\Facturation.Shared.pdb

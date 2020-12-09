@@ -1,0 +1,64 @@
+﻿@page "/factures"
+@using Facturation.Shared
+@inject HttpClient Http
+
+<h1>Factures</h1>
+
+
+@if (factures.Count() == 0 && CAAttendu == null && CAReel == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<h2>Chiffre d'affaire attendu: @CAAttendu €</h2>
+<h2>Chiffre d'affaire réel: @CAReel €</h2>
+<div class="container">
+    <div class="row">
+        @foreach (var f in factures)
+        {
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@f.Numero</h5>
+                        <p class="card-text">@f.Client</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Date d'émission: @f.DateEmission</li>
+                        <li class="list-group-item">Date de réglement: @f.DateReglement</li>
+                        <li class="list-group-item">Montant dû: @f.MontantDu €</li>
+                        <li class="list-group-item">Montant réglé: @f.MontantRegle €</li>
+                    </ul>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    }
+
+    @code {
+        private List<Facture> factures;
+        private double CAReel;
+        private double CAAttendu;
+
+        protected override async Task OnInitializedAsync()
+        {
+            DateTime d1 = DateTime.Now;
+
+            factures = new List<Facture>();
+            factures.Add(new Facture("Florian Pointet", "SC1425", d1, d1, 3045.99, 3045.99));
+            factures.Add(new Facture("Bastien Leviez", "SC1426", d1, d1, 4045.99, 4045.99));
+
+            double CAR = 0;
+            double CAA = 0;
+            foreach(Facture f in factures)
+            {
+                CAR += f.MontantRegle;
+                CAA += f.MontantDu;
+            }
+
+            CAReel = CAR;
+            CAAttendu = CAA;
+        }
+
+    }
